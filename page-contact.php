@@ -1,16 +1,82 @@
 <?php get_header() ?>
-<div class="container text-center h-100 page-not-found">
+<div class="container contact-page">
     <div class="row">
-        <div class="col-md-12">
-            <div id="notfound">
-                <div class="notfound">
-                    <div class="notfound-404">
-                        <h1>Contact!</h1>
+        <div class="col-md-8">
+            <div class="contact-me">
+                <h1 class="contact-header">Contact Me!</h1>
+                <p class="contact-info">If you want to contact me, do not hesitate. Put your name, email and message you want.</p>
+                <form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label for="form_name">Firstname:</label>                                    
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label for="form_lastname">Lastname:</label>                                   
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label for="form_email">Email:</label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label for="form_message">Message:</label>
+                                        </div>
+                                        <div class="col-md-10">                                    
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-10 offset-2">
+                                <input type="submit" class="btn btn-success btn-block btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-2">
+                                <p class="text-muted">
+                                    <strong>*</strong> These fields are required.
+                            </div>
+                        </div>
                     </div>
-                    <h2>Contact - page not builded</h2>
-                    <p>this page need to be built by the user to say what you put in the page based on your choices.</p>
-                    <a href="<?php bloginfo('url'); ?>">Go To Homepage</a>
-                </div>
+                </form>
             </div>
         </div>
     </div>

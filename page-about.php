@@ -7,7 +7,7 @@
                     <div class="notfound-404">
                         <h1>About</h1>
                     </div>
-                    <h2>About - page not builded</h2>
+                    <h2>About Us</h2>
                     <p>this page need to be built by the user to say what you put in the page based on your choices.</p>
                     <a href="<?php bloginfo('url'); ?>">Go To Homepage</a>
                 </div>
